@@ -1,0 +1,23 @@
+{
+  "name": "CommentAplication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brunomestres/Electron-Second.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brunomestres/Electron-Second/issues"
+  },
+  "homepage": "https://github.com/Brunomestres/Electron-Second#readme",
+  "dependencies": {
+    "electron": "^9.1.2"
+  }
+}

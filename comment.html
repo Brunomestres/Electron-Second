@@ -1,0 +1,25 @@
+<head>
+
+</head>
+<body>
+  <form action="">
+    <div>
+      <label for="">Digite seu Comentário:</label>
+    </div>
+    <div>
+      <input type="text" autofocus>
+    </div>
+    <button type="submit">Enviar</button>
+  </form>
+  
+  <script>
+    const electron = require('electron');
+    const { ipcRenderer } = electron;
+    document.querySelector('form').addEventListener('submit',(event) => {
+      event.preventDefault();
+      const { value } = document.querySelector('input');
+      ipcRenderer.send('addComment', value);
+    });
+
+  </script>
+</body>
